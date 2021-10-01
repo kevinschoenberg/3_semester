@@ -21,7 +21,6 @@ void findPair(vector<int> v, int target)
 
 int main()
 {
-    
     vector<int> v;
     vector<int>::iterator itr;
 
