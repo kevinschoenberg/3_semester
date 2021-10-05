@@ -7,7 +7,7 @@ using namespace std;
 void findPair(vector<int> v, int target)
 {
     vector<int>::iterator itr;
-    for (auto i = v.begin(); i < v.end(); i++)
+    for (vector<int>::iterator i = v.begin(); i < v.end(); i++)
     {
         itr = find(v.begin(), v.end(), target - *i);
         if (itr != i && itr != v.end())
