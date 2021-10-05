@@ -103,12 +103,12 @@ Matrix<Object> &matsort(Matrix<Object> &mat)
 template <typename Object>
 bool matsearch(Matrix<Object> &mat, int x)
 {
+	//Complexity is O(2n + 1) ≈ O(n)
 	int itt = 0;
 	int row = 0;
 	int col = 0;
 
-	//Finding row x must be in  O(n)
-
+	//Finding row x must be in O(n)
 	while (row + 1 < mat.numrows())
 	{
 		if (mat[row + 1][col] > x)
@@ -118,21 +118,25 @@ bool matsearch(Matrix<Object> &mat, int x)
 		row++;
 	}
 
+	//Check if we found x on the first col O(1)
 	if (mat[row][0] == x)
 	{
 		cout << "Found: " << mat[row][0] << endl;
 		return true;
 	}
 
-	for (int i = 0; i < mat.numcols(); i++)
+	//Searching row for x O(n)
+	while (col < mat.numcols())
 	{
-		if (mat[row][i] == x)
+		if (mat[row][col] == x)
 		{
-			cout << "Found: " << mat[row][i] << endl;
+			cout << "Found: " << mat[row][col] << endl;
 			return true;
 		}
+		col++;
 	}
 
+	//If x was not found
 	cout << "Did not find: " << x << endl;
 	return false;
 }

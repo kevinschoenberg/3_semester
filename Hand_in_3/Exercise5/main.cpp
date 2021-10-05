@@ -24,11 +24,16 @@ int main(void) {
 	Matrix<int>& sorted = matsort(mat);
 	cout << "sorted=" << endl << sorted << endl;
 
-	bool out1 = matsearch(sorted, 1);
-	bool out2 = matsearch(sorted, 10);
-	bool out3 = matsearch(sorted, 50);
-	bool out4 = matsearch(sorted, 75);
-	bool out5 = matsearch(sorted, 90);
+	//Searching for specific values
+	//bool out1 = matsearch(sorted, 1);
+	//bool out2 = matsearch(sorted, 10);
+
+	//Searching for all values on the interval
+	bool out;
+	for (int i = 0; i < MAX; i++)
+	{
+		out = matsearch(sorted, i);
+	}
 
 
 	delete &sorted;
