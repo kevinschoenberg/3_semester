@@ -16,7 +16,7 @@ void minmax(int min, int max, int* a, int i)
 	} else if(a[i] < min)
 	{
 		min = a[i];
-	} 
+	}
 	i--;
 	return minmax(min, max, a, i);
 	

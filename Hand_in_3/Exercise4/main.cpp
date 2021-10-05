@@ -20,24 +20,8 @@ int main(void) {
 		}
 	}
 
-	try {
-		mat[ROWS][COLS] = 0.0f;                  // invalid access
-	} catch (exception& e) {
-		cout << e.what() << endl;
-		mat[ROWS - 1][COLS - 1] = 0.0f;
-	}
-
 	cout << "mat=" << endl << mat << endl;
-	mat.add(mat);
-	cout << "add=" << endl << mat << endl;
+	mat.transpose();
+	cout << "trans=" << endl << mat << endl;
 
-	cout << "id =" << endl << id << endl;
-	Matrix<double>& mult = multiply(mat, id);
-	cout << "mult=" << endl << mult << endl;
-
-	cout << "mat=" << endl << mat << endl;
-	Matrix<double>& trans = transpose(mat);
-	cout << "trans=" << endl << trans << endl;
-
-	delete &mult;
 }

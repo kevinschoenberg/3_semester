@@ -58,8 +58,7 @@ class Matrix {
 		}
 
 		void add(Matrix& mat);
-		void transpose();
-
+		
 };
 
 #include "matrix_class.tpp"

@@ -40,15 +40,49 @@ Matrix<Object>& multiply(Matrix<Object>& a, Matrix<Object>& b) {
 }
 
 template <typename Object>
-Matrix<Object>& transpose(Matrix<Object>& mat) {
+void Matrix<Object>::transpose() {
 
-	Matrix<Object> *trans = new Matrix<Object>(mat.numcols(), mat.numrows());
+	int oldrows = numrows();
+	int oldcols = numcols();
 
-	for(int i = 0; i < mat.numrows(); ++i) {
-        for(int j = 0; j < mat.numcols(); ++j) {
-			(*trans)[j][i] = mat[i][j];
+	if (numrows() < numcols())
+	{
+		for (int i = 0; i < (numcols()-numrows()); i++)
+		{
+			cout << numcols()-numrows() << endl;
+			cout << "adding col" << endl;
+			array.push_back(array[0]);
+		}
+	} else if (numcols() < numrows())
+	{
+		for(auto& r : array) 
+		{
+			r.resize(numrows());
+		}
+	}
+	
+
+	for (int i = 0; i < numrows(); ++i) {
+        for (int j = 0; j < numcols(); ++j) {
+        	if (i == j)
+        	{
+        		break;
+        	} else {
+        		array[j][i] = array[j][i] + array[i][j];
+    			array[i][j] = array[j][i] - array[i][j];
+    			array[j][i] = array[j][i] - array[i][j];
+        	}
 		}
 	}
 
-	return *trans;
+	if (oldcols != numrows())
+	{
+		array.resize(oldcols);
+	} else if (oldrows != numcols())
+	{
+		for(auto& r : array) 
+		{
+			r.resize(oldrows);
+		}
+	}
 }
