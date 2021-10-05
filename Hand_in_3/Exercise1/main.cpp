@@ -7,7 +7,7 @@ using namespace std;
 void findPair(vector<int> v, int target)
 {
     vector<int>::iterator itr;
-    for (vector<int>::iterator i = v.begin(); i < v.end(); i++)
+    for (vector<int>::iterator i = v.begin(); i != v.end(); i++)
     {
         itr = find(v.begin(), v.end(), target - *i);
         if (itr != i && itr != v.end())
@@ -22,7 +22,6 @@ void findPair(vector<int> v, int target)
 int main()
 {
     vector<int> v;
-    vector<int>::iterator itr;
 
     v.push_back(8);
     v.push_back(7);
@@ -32,8 +31,6 @@ int main()
     v.push_back(1);
 
     int target = 10;
-
-    int n = v.size();
 
     findPair(v, target);
 

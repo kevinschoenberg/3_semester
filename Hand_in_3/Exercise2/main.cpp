@@ -1,25 +1,32 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
-double f(double x)
+double f1(double x)
 {
-	return x;
+	return 5*x-22;
+}
+double f2(double x)
+{
+	return 3*exp(x);
 }
 
 double search(double a, double b, double c, double (*f)(double x))
 {
-	
 	int att = 0;
 
 	while(1)
 	{
 		att++;
 		double x = (a + b) / 2;
-		cout << att << " " << x << endl;
-		if(f(x) == c)
+		// If error is less than e^-10, then we say we found x
+		// This is because there could be an error forced by the precision of the double datatype
+		double errorMargin = 1e-10;
+		double error = abs(abs(f(x)) - abs(c));
+		if(error < errorMargin)
 		{
-			cout << "Found x: " << x << " in " << att << " attempts" << endl;
+			cout << "Found x: " << x << " in " << att << " attempts" << ", f(x) = " << f(x) << ", with error: " << abs(abs(f(x)) - abs(c)) << endl;
 			return x;
 		} else if (f(x) > c)
 		{
@@ -29,11 +36,13 @@ double search(double a, double b, double c, double (*f)(double x))
 			a = x;
 		}
 	}
-
 }
-//Se data med 1.5 Den viser en logaritmist udvikling
 int main()
 {
-	cout << search(0, 10000, 1.5, &f) << endl;
+	cout << "f1" << endl;
+	double x1 = search(0, 10000, 70.3, &f1);
+	cout << "f2" << endl;
+	double x2 = search(0, 10000, 70.3, &f2);
+
 	return 0;
 }
