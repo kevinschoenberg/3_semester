@@ -23,6 +23,8 @@ double search(double a, double b, double c, double (*f)(double x))
 		att++;
 		double x = ((b - a) / 2) + a;
 
+		// If error is less than e^-10, then we say we found x
+		// This is because there could be an error forced by the precision of the double datatype
 		double margin = 1e-10;
 		double error = abs(abs(f(x)) - abs(c));
 		if (error < margin)
