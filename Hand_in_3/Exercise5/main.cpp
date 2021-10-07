@@ -9,7 +9,9 @@ using namespace std;
 #define MAX 		100
 
 int main(void) {
+	//Create matrix with random values
 	Matrix<int> mat(ROWS, COLS), id(COLS, COLS);
+
 	srand(time(0));
 
 	for (int i = 0; i < COLS; i++) id[i][i] = 1; // intialize id
@@ -19,8 +21,10 @@ int main(void) {
 			mat[i][j] = rand() % MAX;
 		}
 	}
-
+	
+	//print matrix before it is sorted
 	cout << "mat=" << endl << mat << endl;
+	//Sort matrix
 	Matrix<int>& sorted = matsort(mat);
 	cout << "sorted=" << endl << sorted << endl;
 

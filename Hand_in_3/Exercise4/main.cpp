@@ -4,11 +4,13 @@
 #include "stdlib.h"
 using namespace std;
 
-#define ROWS		10
-#define COLS		5
-#define MAX 		100
+//Define size of matrix
+#define ROWS	10
+#define COLS	5
+#define MAX		100
 
 int main(void) {
+	//Create matrix with random values
 	Matrix<double> mat(ROWS, COLS), id(COLS, COLS);
 	srand(time(0));
 
@@ -19,9 +21,11 @@ int main(void) {
 			mat[i][j] = ((double) rand() / (RAND_MAX)) * MAX;
 		}
 	}
-
+	//print matrix before transpose
 	cout << "mat=" << endl << mat << endl;
+	//test the transpose function
 	mat.transpose();
+	//print transposed matrix
 	cout << "trans=" << endl << mat << endl;
 
 }
