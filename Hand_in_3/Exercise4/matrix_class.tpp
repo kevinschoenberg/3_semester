@@ -42,6 +42,9 @@ Matrix<Object>& multiply(Matrix<Object>& a, Matrix<Object>& b) {
 template <typename Object>
 void Matrix<Object>::transpose() {
 
+
+	//Making our matrix square by increasing the size of the shortest side
+	//Ignored if it is sqaure
 	int oldrows = numrows();
 	int oldcols = numcols();
 
@@ -62,6 +65,8 @@ void Matrix<Object>::transpose() {
 	}
 	
 
+	//Transposing the matrix
+
 	for (int i = 0; i < numrows(); ++i) {
         for (int j = 0; j < numcols(); ++j) {
         	if (i == j)
@@ -74,6 +79,9 @@ void Matrix<Object>::transpose() {
         	}
 		}
 	}
+
+	//Reducing size of the previous largest side
+	//Ignored if it was sqaure
 
 	if (oldcols != numrows())
 	{

@@ -17,6 +17,7 @@ double f2(double x)
 }
 
 //Serach for x such that the function equals C.
+//We use binary search to find x, which is O(logN)
 double search(double a, double b, double c, double (*f)(double x))
 {
 	int att = 0;
@@ -66,6 +67,7 @@ int main()
 		double x1 = search(0, 10000 , i, &f1);
 	}
 	
+	cout << "f1" << endl;
 	double x1 = search(0, 10000, 70.3, &f1);
 	cout << "f2" << endl;
 	double x2 = search(0, 1000, 69.420, &f2);

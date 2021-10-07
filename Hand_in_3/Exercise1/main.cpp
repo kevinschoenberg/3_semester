@@ -37,7 +37,7 @@ int main()
     v.push_back(1);
 
     //set target
-    int target = 8;
+    int target = 10;
 
     //find pair
     findPair(v, target);

@@ -73,6 +73,7 @@ template <typename Object>
 Matrix<Object> &matsort(Matrix<Object> &mat)
 {
 
+	//Puts matrix into an array
 	Object temp[mat.numrows() * mat.numcols()];
 	int k = 0;
 
@@ -83,12 +84,15 @@ Matrix<Object> &matsort(Matrix<Object> &mat)
 			temp[k++] = mat[i][j];
 		}
 	}
+
+	//Sorts the array
 	std::sort(temp, temp + k);
 
 	Matrix<Object> *sorted = new Matrix<Object>(mat.numrows(), mat.numcols());
 
 	k = 0;
 
+	//Puts the array back into matrix form
 	for (int i = 0; i < mat.numrows(); ++i)
 	{
 		for (int j = 0; j < mat.numcols(); ++j)
@@ -103,7 +107,6 @@ Matrix<Object> &matsort(Matrix<Object> &mat)
 template <typename Object>
 bool matsearch(Matrix<Object> &mat, int x)
 {
-	//Complexity is O(2n + 1) ≈ O(n)
 	int itt = 0;
 	int row = 0;
 	int col = 0;
