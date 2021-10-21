@@ -6,7 +6,8 @@
                 "${default}",
                 "/usr/local/Cellar/gcc/11.2.0/include/c++/11.2.0/tr1",
                 "/Library/Developer/CommandLineTools/usr/include/c++/v1",
-                "/Library/Developer/CommandLineTools/usr/include/c++/v1"
+                "/Library/Developer/CommandLineTools/usr/include/c++/v1",
+                "${workspaceFolder}/Hand_in_4/Exercise1"
             ],
             "compilerPath": "/usr/local/bin/gcc-11",
             "cStandard": "gnu11",
