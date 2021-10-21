@@ -20,9 +20,11 @@ using namespace std;
  * Use union by rank and path compression.
  * Elements in the set are numbered starting at 0.
  */
-class DisjSets {
-  public:
+class DisjSets
+{
+public:
 	DisjSets(int numElements);
+	DisjSets();
 
 	int find(int x) const;
 	int find(int x);
@@ -31,9 +33,19 @@ class DisjSets {
 	void print_s(int numElements);
 	void printx(int x, size_t numElements);
 
-  private:
-	 vector<int> s;
+private:
+	vector<int> s;
 };
+
+class Maze
+{
+public:
+	Maze();
+	Maze(int rows, int cols);
+private:
+	vector<int> s;
+	void generate(int rows, int cols);
+}
 
 #include "disjoint_sets.cpp"
 
