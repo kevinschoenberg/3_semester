@@ -40,3 +40,51 @@ int DisjSets::find(int x) {
 	else
 		return find(s[x]);
 }
+
+int DisjSets::new_find(int x)
+{
+	int root = x;
+
+	if(s[x] < 0)
+	{
+		return s[x]; //O(1)
+	}
+
+	while(s[root] >= 0)
+	{
+		root = s[root]; //O(n)
+	}
+	int prev;
+	int step = x;
+	while(s[step] >= 0)
+	{
+		prev = step;
+		step = s[step]; //O(n)
+		unionSets(root,prev);
+	}
+
+	return root;
+}
+
+void DisjSets::print_s(int numElements)
+{
+	for (int i = 0; i < numElements; i++)
+    {
+        cout << s[i] << " ";
+    }
+	cout << endl;
+}
+
+void DisjSets::printx(int x, size_t numElements)
+{
+	int target = find(x);
+	cout << "printing all elements with the root: " << target << endl;
+	for (size_t i = 0; i < numElements; i++)
+	{
+		if (find(i)==target)
+		{
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+}

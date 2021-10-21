@@ -28,7 +28,7 @@ class DisjSets {
 	int find(int x);
 	int new_find(int x);
 	void unionSets(int root1, int root2);
-	void print_s();
+	void print_s(int numElements);
 
   private:
 	 vector<int> s;

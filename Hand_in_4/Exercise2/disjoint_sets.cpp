@@ -14,13 +14,7 @@ DisjSets::DisjSets(int numElements):s(numElements, -1) {}
  * root2 is the root of set 2.
  */
 void DisjSets::unionSets(int root1, int root2) {
-	if (s[root2] < s[root1])	// root2 is deeper
-		s[root1] = root2;		// Make root2 new root
-	else {
-		if (s[root1] == s[root2])
-			--s[root1];			// Update height if same
-		s[root2] = root1;		// Make root1 new root
-	}
+	s[root2] = root1;
 }
 
 /**
@@ -36,7 +30,7 @@ int DisjSets::find(int x) const {
 }
 
 /**
- * Perform a find with path compression.
+ * Perform a find, same as above..
  * Error checks omitted again for simplicity.
  * Return the set containing x.
  */
@@ -44,5 +38,53 @@ int DisjSets::find(int x) {
 	if (s[x] < 0)
 		return x;
 	else
-		return s[x] = find(s[x]);
+		return find(s[x]);
+}
+
+int DisjSets::new_find(int x)
+{
+	int root = x;
+
+	if(s[x] < 0)
+	{
+		return s[x]; //O(1)
+	}
+
+	while(s[root] >= 0)
+	{
+		root = s[root]; //O(n)
+	}
+	int prev;
+	int step = x;
+	while(s[step] >= 0)
+	{
+		prev = step;
+		step = s[step]; //O(n)
+		unionSets(root,prev);
+	}
+
+	return root;
+}
+
+void DisjSets::print_s(int numElements)
+{
+	for (int i = 0; i < numElements; i++)
+    {
+        cout << s[i] << " ";
+    }
+	cout << endl;
+}
+
+void DisjSets::printx(int x, size_t numElements)
+{
+	int target = find(x);
+	cout << "printing all elements with the root: " << target << endl;
+	for (size_t i = 0; i < numElements; i++)
+	{
+		if (find(i)==target)
+		{
+			cout << i << " ";
+		}
+	}
+	cout << endl;
 }

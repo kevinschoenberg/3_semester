@@ -4,9 +4,7 @@
  * Construct the disjoint sets object.
  * numElements is the initial number of disjoint sets.
  */
-DisjSets::DisjSets(int numElements):s(numElements, -1) {
-	s = {3, 0, -1, -1, 2, 4, 5, 6, -1, -1};
-}
+DisjSets::DisjSets(int numElements):s(numElements, -1) {}
 
 /**
  * Union two disjoint sets.
@@ -43,27 +41,36 @@ int DisjSets::find(int x) {
 		return find(s[x]);
 }
 
-
 int DisjSets::new_find(int x)
 {
 	int root = x;
+
 	if(s[x] < 0)
 	{
-		return s[x];
+		return s[x]; //O(1)
 	}
 
-	while(s[root] != -1)
+	while(s[root] >= 0)
 	{
-		root = s[root];
+		root = s[root]; //O(n)
 	}
-	s[x] = root;
+	int prev;
+	int step = x;
+	while(s[step] >= 0)
+	{
+		prev = step;
+		step = s[step]; //O(n)
+		unionSets(root,prev);
+	}
 
 	return root;
 }
-void DisjSets::print_s()
+
+void DisjSets::print_s(int numElements)
 {
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < numElements; i++)
     {
         cout << s[i] << " ";
     }
+	cout << endl;
 }
