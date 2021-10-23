@@ -13,7 +13,8 @@ code to verify your modification works as expected.
 
 int main() 
 {
-
+    //Construct the Disjointed set:
+    // ds = 3 0 -1 -1 2 4 5 6 -1 -1 
     int size = 10;
     DisjSets ds{size};
     ds.unionSets(2, 4);

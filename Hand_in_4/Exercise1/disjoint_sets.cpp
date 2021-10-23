@@ -41,6 +41,10 @@ int DisjSets::find(int x) {
 		return find(s[x]);
 }
 
+/**
+ * Performs a no recursive find with buildin
+ * path compression.
+ **/
 int DisjSets::new_find(int x)
 {
 	int root = x;
@@ -56,6 +60,8 @@ int DisjSets::new_find(int x)
 	}
 	int prev;
 	int step = x;
+
+	//Path compresion part.
 	while(s[step] >= 0)
 	{
 		prev = step;
@@ -66,6 +72,9 @@ int DisjSets::new_find(int x)
 	return root;
 }
 
+/*
+Prints a given disjointed set.
+*/
 void DisjSets::print_s(int numElements)
 {
 	for (int i = 0; i < numElements; i++)

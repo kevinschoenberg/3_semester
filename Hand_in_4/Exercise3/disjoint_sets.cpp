@@ -44,47 +44,62 @@ int DisjSets::find(int x)
 		return find(s[x]);
 }
 
+/**
+ * Performs a no recursive find with buildin
+ * path compression.
+ **/
 int DisjSets::new_find(int x)
 {
 	int root = x;
 
-	if (s[x] < 0)
+	if(s[x] < 0)
 	{
-		return s[x]; // O(1)
+		return s[x]; //O(1)
 	}
 
-	while (s[root] >= 0)
+	while(s[root] >= 0)
 	{
-		root = s[root]; // O(n)
+		root = s[root]; //O(n)
 	}
 	int prev;
 	int step = x;
-	while (s[step] >= 0)
+
+	//Path compresion part.
+	while(s[step] >= 0)
 	{
 		prev = step;
-		step = s[step]; // O(n)
-		unionSets(root, prev);
+		step = s[step]; //O(n)
+		unionSets(root,prev);
 	}
 
 	return root;
 }
 
+/*
+Prints a given disjointed set.
+*/
 void DisjSets::print_s(int numElements)
 {
 	for (int i = 0; i < numElements; i++)
-	{
-		cout << s[i] << " ";
-	}
+    {
+        cout << s[i] << " ";
+    }
 	cout << endl;
 }
 
+/**
+ * Locates all the sets with the same root as the given x.
+ * And prints them all.
+ * */
 void DisjSets::printx(int x, size_t numElements)
 {
+	//Sets target root
 	int target = find(x);
 	cout << "printing all elements with the root: " << target << endl;
+	//Locates all with same root.
 	for (size_t i = 0; i < numElements; i++)
 	{
-		if (find(i) == target)
+		if (find(i)==target)
 		{
 			cout << i << " ";
 		}
@@ -94,11 +109,13 @@ void DisjSets::printx(int x, size_t numElements)
 
 // Exercise 3.a
 Maze::Maze() : s(1, -1) {}
+//Constructer
 Maze::Maze(int rows, int cols) : s(rows * cols, -1)
 {
 	generate(rows, cols);
 }
 
+//Recursive find function
 int Maze::find(int x)
 {
 	if (s[x] < 0)
@@ -106,18 +123,21 @@ int Maze::find(int x)
 	else
 		return find(s[x]);
 }
-
+ //UNion function.
 void Maze::unionSets(int root1, int root2)
 {
 	s[root2] = root1;
 }
 
+//Print maze function.
 void Maze::print_maze(int rows, int cols)
 {
-	// encode
+	// encode the maze from a disjoint set to a matrix with walls.
 	int en_rows = rows * 2 + 1;
 	int en_cols = cols * 2 + 1;
 	int en[en_cols * en_rows];
+
+	// THe following assgined numbers are showed in the decode part.
 	for (int i = 0; i < en_cols * en_rows; i++)
 	{
 		en[i] = 0;
@@ -141,7 +161,7 @@ void Maze::print_maze(int rows, int cols)
 		}
 	}
 
-	// alle kanterne
+	// Construct all the edges
 	for (int i = 2; i < en_cols - 1; i++)
 	{
 		en[i] = 1;
@@ -154,6 +174,7 @@ void Maze::print_maze(int rows, int cols)
 		en[(i * en_cols) - 1] = 1;
 	}
 
+	// Relation between disjoint set index and the encoded matrix.
 	// int c = i % cols;
 	// int r = floor(i / cols);
 	// s[r * cols + c] = en[1 + 2c + 2r * cols + cols]
@@ -168,7 +189,7 @@ void Maze::print_maze(int rows, int cols)
 	int edge_row = rows - 1;
 	int edge_col = cols - 1;
 
-	// vægge på rækkerne
+	// Walls within the maze.
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols - 1; j++)
@@ -203,8 +224,7 @@ void Maze::print_maze(int rows, int cols)
 		}
 	}
 
-	// decode
-
+	// decode and print the maze.
 	for (int i = 0; i < en_rows * en_cols; i++)
 	{
 		int c = i % en_cols;
@@ -227,7 +247,6 @@ void Maze::print_maze(int rows, int cols)
 		{
 			cout << "  ";
 		}
-		// cout << en[i] << " ";
 
 		if (c == en_cols - 1)
 		{
@@ -236,6 +255,7 @@ void Maze::print_maze(int rows, int cols)
 	}
 	cout << endl;
 }
+
 
 void Maze::print_s2(int rows, int cols)
 {
@@ -252,6 +272,10 @@ void Maze::print_s2(int rows, int cols)
 	cout << endl;
 }
 
+/**
+ * Locates all the sets with the same root as the given x.
+ * And prints them all.
+ * */
 void Maze::printx(int x, size_t numElements)
 {
 	int target = find(x);
@@ -266,6 +290,7 @@ void Maze::printx(int x, size_t numElements)
 	cout << endl;
 }
 
+
 int Maze::getlen(int x, size_t numElements)
 {
 	int target = find(x);
@@ -277,14 +302,13 @@ int Maze::getlen(int x, size_t numElements)
 			len++;
 		}
 	}
-	// cout << endl;
 	return len;
 }
 
+//Maze generation 
 void Maze::generate(int rows, int cols)
 {
-	// fjern walls ved at union to felter der er ved siden af hinanden
-
+	//Remove walls by using union on two fields next to each other.
 	srand(time(0));
 
 	int dir, c, r, root, succes;
@@ -297,13 +321,16 @@ void Maze::generate(int rows, int cols)
 	while (getlen(end, cells) != cells)
 	{
 		cell = rand() % cells;
-		// hvis find giver "0" altså roden til alt, så er den med og der skal ikke gøre snoget
-		// vi lader dog 0 komme gennem
+		//If the result is "0". Then dont do anything.
 		root = find(cell);
 
-		// Tjek om c eller r er 0, r == rwos eller c == cols.
+		//Check if c or r is 0. r== rwos or c==cols.
 
-		// Hvis den retning vi går har samme root, så break;
+		// If the direction we move have the same root, then break;
+		// A way to use an array as a matrix.
+		// r is the row one want to walk down
+		// c is the collum one want to walk down
+		// s[r * cols + c];
 
 		c = cell % cols;
 		r = floor(cell / cols);
@@ -315,7 +342,7 @@ void Maze::generate(int rows, int cols)
 		{
 			dir = rand() % 4;
 			arr[dir] = 0;
-			// cout << "i " << cell << " " << dir << endl;
+
 			switch (dir)
 			{
 			case 0:
@@ -357,28 +384,31 @@ void Maze::generate(int rows, int cols)
 			}
 		}
 	}
-
-	// Måde at bruge array som matrix
-	// r er den række man vil ned på
-	// c er den kolonne man vil hen på
-	// s[r * cols + c];
 }
 
+//Finds and prints a solution for the given maze.
 void Maze::print_solution(int rows, int cols)
 {
+	//Determines the start and end field of the maze.
 	int start = 0;
 	int end = rows * cols - 1;
-
+	
+	//Creates the arrays for the path from start and from end. 
 	int start_path[rows * cols];
 	int end_path[rows * cols];
 	start_path[0] = start;
 	end_path[0] = end;
-
 	int start_path_len = 1;
 	int end_path_len = 1;
+	//Create solution array
+	int solution[rows * cols];
+	int solution_len = 0;
 
+	//Locates the root.
 	int root = find(start);
 	int cell = start;
+
+	//Creates path to the root from the start of the maze.
 	while (cell != root)
 	{
 		cell = s[cell];
@@ -386,6 +416,7 @@ void Maze::print_solution(int rows, int cols)
 		start_path_len++;
 	}
 
+	//creates path to the root from the end of the maze.
 	cell = end;
 	while (cell != root)
 	{
@@ -394,23 +425,29 @@ void Maze::print_solution(int rows, int cols)
 		end_path_len++;
 	}
 
+	//Prints the path from start to root
+	/**
 	for (int i = 0; i < start_path_len; i++)
 	{
 		cout << start_path[i] << " ";
 	}
 	cout << endl;
+	**/
+	//Prints the path from end to root
+	/**
 	for (int i = 0; i < end_path_len; i++)
 	{
 		cout << end_path[i] << " ";
 	}
-
 	cout << endl;
+	**/
 
-	int solution[rows * cols];
-	int solution_len = 0;
+	//Locates the meeting point between the two paths.
 	int meeting_point;
 	for (int i = 0; i < start_path_len; i++)
 	{
+		//Fills the solution with first part of the start to root path.
+		//until the two paths meet.
 		solution[i] = start_path[i];
 		solution_len++;
 		for (int j = 0; j < end_path_len; j++)
@@ -418,24 +455,26 @@ void Maze::print_solution(int rows, int cols)
 			if (start_path[i] == end_path[j])
 			{
 				meeting_point = j;
-				cout << "mp" << meeting_point;
 				i = start_path_len;
 				break;
 			}
 		}
 	}
+
+	//Fills the solution with the rest of the path from
+	// end to root which is adfter the meeting point.
 	for (int i = meeting_point - 1; i > -1; i--)
 	{
 		solution[solution_len] = end_path[i];
 		solution_len++;
 	}
-
 	cout << endl;
+
+	//Prints the solution.
 	cout << "solution is: ";
 	for (int i = 0; i < solution_len; i++)
 	{
 		cout << solution[i] << " ";
 	}
-	cout << endl
-		 << solution_len << endl;
+	cout << endl << "Leangth of the solution is: " << solution_len << endl;
 }
