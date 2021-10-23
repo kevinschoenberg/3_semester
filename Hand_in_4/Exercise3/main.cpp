@@ -11,28 +11,23 @@ code to verify your modification works as expected.
 #include <iostream>
 #include "disjoint_sets.h"
 
-int main() 
+const int rows = 5;
+const int cols = 5;
+
+int main()
 {
 
-    Maze mz(5, 5);
+
+    Maze mz(rows, cols);
 
     std::cout << "print" << endl;
-    mz.print_s(5, 5);
+    mz.print_maze(rows, cols);
 
+    mz.print_s2(rows, cols);
 
-    for(int i = 0; i < 25; i++)
-    {
-        cout << i << " ";
-        int c = i % 5;
-		int r = floor(i / 5);
-		if (c == 5 - 1)
-		{
-			cout << endl;
-		}
-	}
-	cout << endl;
+    //mz.printx(rows * cols - 1, rows * cols);
+    mz.print_solution(rows, cols);
 
-    mz.printx(24, 25);
 
     return 0;
 }

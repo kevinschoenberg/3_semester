@@ -33,6 +33,7 @@ public:
 	int new_find(int x);
 	void unionSets(int root1, int root2);
 	void print_s(int numElements);
+	
 	void printx(int x, size_t numElements);
 
 private:
@@ -44,9 +45,11 @@ class Maze
 public:
 	Maze();
 	Maze(int rows, int cols);
-	void print_s(int rows, int cols);
+	void print_maze(int rows, int cols);
+	void print_s2(int rows, int cols);
 	void printx(int x, size_t numElements);
 	int getlen(int x, size_t numElements);
+	void print_solution(int rows, int cols);
 private:
 	vector<int> s;
 	void generate(int rows, int cols);
