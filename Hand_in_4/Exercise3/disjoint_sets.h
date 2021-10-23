@@ -12,6 +12,8 @@
 // No error checking is performed
 
 #include <vector>
+#include <stdlib.h>
+#include <math.h>  
 
 using namespace std;
 
@@ -42,10 +44,15 @@ class Maze
 public:
 	Maze();
 	Maze(int rows, int cols);
+	void print_s(int rows, int cols);
+	void printx(int x, size_t numElements);
+	int getlen(int x, size_t numElements);
 private:
 	vector<int> s;
 	void generate(int rows, int cols);
-}
+	int find(int x);
+	void unionSets(int root1, int root2);
+};
 
 #include "disjoint_sets.cpp"
 

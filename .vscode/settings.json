@@ -1,6 +1,17 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "random": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__string": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "cmath": "cpp"
     }
 }

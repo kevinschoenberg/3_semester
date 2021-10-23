@@ -14,18 +14,25 @@ code to verify your modification works as expected.
 int main() 
 {
 
-    int size = 10;
-    DisjSets ds{size};
-    ds.unionSets(2, 4);
-    ds.unionSets(4, 5);
-    ds.unionSets(5, 6);
-    ds.unionSets(6, 7);
-    ds.unionSets(0, 1);
-    ds.unionSets(3, 0);
-    ds.print_s(size);
-    
-    ds.printx(1, size);
-    ds.printx(4, size);
-    ds.printx(9, size);
+    Maze mz(5, 5);
+
+    std::cout << "print" << endl;
+    mz.print_s(5, 5);
+
+
+    for(int i = 0; i < 25; i++)
+    {
+        cout << i << " ";
+        int c = i % 5;
+		int r = floor(i / 5);
+		if (c == 5 - 1)
+		{
+			cout << endl;
+		}
+	}
+	cout << endl;
+
+    mz.printx(24, 25);
+
     return 0;
 }
