@@ -12,6 +12,9 @@
         "unordered_map": "cpp",
         "*.tcc": "cpp",
         "chrono": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "*.tpp": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp"
     }
 }
