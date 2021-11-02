@@ -10,9 +10,8 @@ using namespace std;
 int main() {
 	int minItem = 40;	// same number of digits
 	int maxItem = 50;
-    vector<int> input;// = {40, 41, 42, 43, 44, 45, 46, 47, 48, 49};
+    vector<int> input;
 
-	//BinaryHeap<int> h;
 	int x;
 
 	/* Insert all integers i between min and max out of order. */
@@ -23,14 +22,12 @@ int main() {
     for (int i = 0; i < input.size(); i++)
     {
         cout << input[i] << " ";
-        //h.insert(input[i]);
     }
     
     cout << endl;
 
     BinaryHeap<int> h(input);
 
-    //h.buildHeap();
     h.print();
 
 	for (int i = maxItem-1; i >= minItem; --i) {
@@ -40,9 +37,7 @@ int main() {
 		}
 	}
 
-    //h.print();
-
-	cout << "If nothing was printed before, no error!" << endl;
+	cout << "If no Oops! was printed before, no error!" << endl;
 
 	return 0;
 }
