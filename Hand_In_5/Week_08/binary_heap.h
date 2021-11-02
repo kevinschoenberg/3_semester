@@ -33,6 +33,8 @@ class BinaryHeap {
 	void deleteMin();
 	void deleteMin(Comparable& minItem);
 
+	void print();
+
 };
 
 #include "binary_heap.tpp"

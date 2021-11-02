@@ -50,9 +50,16 @@ void BinaryHeap<Comparable>::deleteMin(Comparable & minItem) {
 }
 
 template<typename Comparable>
-void BinaryHeap<Comparable>::deleteMax(Comparable & minItem) {
+void BinaryHeap<Comparable>::deleteMax() {
 	if (isEmpty()) throw underflow_error("heap is empty.");
-	minItem = std::move(array[1]);
+	array[1] = std::move(array[currentSize--]);
+	maxHeapify(1);
+}
+
+template<typename Comparable>
+void BinaryHeap<Comparable>::deleteMax(Comparable & maxItem) {
+	if (isEmpty()) throw underflow_error("heap is empty.");
+	maxItem = std::move(array[1]);
 	array[1] = std::move(array[currentSize--]);
 	maxHeapify(1);
 }
@@ -93,12 +100,13 @@ template<typename Comparable>
 void BinaryHeap<Comparable>::maxHeapify(int node) {
 	int child;
 	Comparable tmp = std::move(array[node]);
+	//cout << "heapify ";
 
 	for (; node * 2 <= currentSize; node = child) {
 		child = node * 2;
-		if (child != currentSize && array[child + 1] < array[child])
+		if (child != currentSize && array[child + 1] > array[child])
 			++child;
-		if (array[child] < tmp)
+		if (array[child] > tmp)
 			array[node] = std::move(array[child]);
 		else
 			break;
@@ -108,7 +116,9 @@ void BinaryHeap<Comparable>::maxHeapify(int node) {
 
 template<typename Comparable>
 void BinaryHeap<Comparable>::print() {
-	for (int i = 0; i < currentSize; i++)
+
+	cout << endl;
+	for (int i = 1; i <= currentSize; i++)
 	{
 		cout << array[i] << " ";
 	}

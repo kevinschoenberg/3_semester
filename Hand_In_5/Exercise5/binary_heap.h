@@ -24,8 +24,9 @@ class BinaryHeap {
 		array.resize(items.size() + 10);
 		for (int i = 0; i < items.size(); ++i)
 			array[i + 1] = items[i];
+		currentSize = items.size();
 		buildHeap();
-		currentSize = items.size() + 1;
+		
 	}
 
 	bool isEmpty() const { return currentSize == 0; }
@@ -35,7 +36,7 @@ class BinaryHeap {
 	void deleteMin();
 	void deleteMin(Comparable& minItem);
 	void deleteMax();
-	void deleteMax(Comparable& minItem);
+	void deleteMax(Comparable& maxItem);
 
 	void print();
 

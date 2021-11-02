@@ -80,3 +80,16 @@ void BinaryHeap<Comparable>::minHeapify(int node) {
 	}
 	array[node] = std::move(tmp);
 }
+
+
+template<typename Comparable>
+void BinaryHeap<Comparable>::print() {
+
+	cout << endl;
+	for (int i = 1; i <= currentSize; i++)
+	{
+		cout << array[i] << " ";
+	}
+	cout << endl;
+	
+}

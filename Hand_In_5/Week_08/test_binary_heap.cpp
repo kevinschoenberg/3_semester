@@ -7,8 +7,8 @@ using namespace std;
 
 	// Test program
 int main() {
-	int minItem = 10000;	// same number of digits
-	int maxItem = 99999;
+	int minItem = 80;	// same number of digits
+	int maxItem = 99;
 	BinaryHeap<int> h;
 	int x;
 
@@ -18,6 +18,7 @@ int main() {
 			h.insert(i);
 		}
 	}
+	h.print();
 
 	for (int i = minItem; i < maxItem; ++i) {
 		h.deleteMin(x);

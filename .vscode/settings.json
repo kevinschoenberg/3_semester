@@ -15,6 +15,15 @@
         "cmath": "cpp",
         "*.tpp": "cpp",
         "iosfwd": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "ostream": "cpp",
+        "__tuple": "cpp",
+        "array": "cpp",
+        "__split_buffer": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "queue": "cpp",
+        "utility": "cpp"
     }
 }
