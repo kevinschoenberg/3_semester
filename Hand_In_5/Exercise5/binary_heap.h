@@ -33,6 +33,7 @@ class BinaryHeap {
 
 	void insert(const Comparable& x);
 	const Comparable& findMin() const;
+	const Comparable& findMax() const;
 	void deleteMin();
 	void deleteMin(Comparable& minItem);
 	void deleteMax();

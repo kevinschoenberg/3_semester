@@ -26,6 +26,13 @@ const Comparable& BinaryHeap<Comparable>::findMin() const {
 	return array[1];
 }
 
+template<typename Comparable>
+const Comparable& BinaryHeap<Comparable>::findMax() const {
+	if (isEmpty()) throw underflow_error{};
+	return array[1];
+}
+
+
 /**
  * Remove the minimum item.
  * Throws UnderflowException if empty.
