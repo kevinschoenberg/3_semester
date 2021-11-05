@@ -2,8 +2,8 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
 #include "binary_heap.h"
+
 using namespace std;
 
 // Test program
@@ -38,6 +38,32 @@ int main() {
 	}
 
 	cout << "If no Oops! was printed before, no error!" << endl;
+
+	//priority queue
+	p_queue<int> pq;
+	
+	//initialize queue
+	pq.push(4);
+	pq.push(5);
+	pq.push(6);
+	pq.push(7);
+	pq.push(8);
+	pq.push(9);
+	//print
+	pq.b.print();
+
+	cout <<"The top of the queue is " << pq.top() << endl;
+
+	//This should remove the 9
+	pq.pop();
+	pq.b.print();
+
+	// this should return true:
+	pq.clear();
+	cout <<"Prints 1 if empty, 0 if false (" << pq.empty() <<")" << endl;
+	
+
+	
 
 	return 0;
 }

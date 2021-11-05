@@ -19,7 +19,6 @@ int main() {
 		}
 	}
 	h.print();
-
 	for (int i = minItem; i < maxItem; ++i) {
 		h.deleteMin(x);
 		if (x != i) {

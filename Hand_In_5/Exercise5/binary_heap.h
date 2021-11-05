@@ -19,7 +19,6 @@ class BinaryHeap {
 
   public:
 	BinaryHeap(int capacity = 100) : array(capacity + 1), currentSize(0) {};
-
 	BinaryHeap(const vector<Comparable> &items) {
 		array.resize(items.size() + 10);
 		for (int i = 0; i < items.size(); ++i)
@@ -28,19 +27,47 @@ class BinaryHeap {
 		buildHeap();
 		
 	}
-
 	bool isEmpty() const { return currentSize == 0; }
-
 	void insert(const Comparable& x);
-	const Comparable& findMin() const;
 	const Comparable& findMax() const;
-	void deleteMin();
-	void deleteMin(Comparable& minItem);
 	void deleteMax();
 	void deleteMax(Comparable& maxItem);
 
 	void print();
+	void clear()
+	{
+		currentSize = 0;
+		array.clear();
+		array.resize(100);
+	}
 
+};
+
+template <typename Comparable>
+class p_queue {
+	public:
+	BinaryHeap<Comparable> b;
+
+	void pop()
+	{
+		b.deleteMax();
+	}
+	void push(const Comparable& x)
+	{
+		b.insert(x);
+	}
+	const Comparable& top() const
+	{
+		return b.findMax();
+	}
+	bool empty()
+	{
+		return b.isEmpty();
+	}
+	void clear()
+	{
+		b.clear();
+	}
 };
 
 #include "binary_heap.tpp"

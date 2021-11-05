@@ -8,54 +8,29 @@ void BinaryHeap<Comparable>::insert(const Comparable& x) {
 
 	// Move up
 	int node = ++currentSize;
+	//currentSize++;
 	Comparable copy = x;
 
 	array[0] = std::move(copy);
-	for (; x < array[node / 2]; node /= 2)
+	for (; x > array[node / 2]; node /= 2)
 		array[node] = std::move(array[node / 2]);
 	array[node] = std::move(array[0]);
 }
 
 /**
- * Find the smallest item in the priority queue.
+ * Find the largest item in the priority queue.
  * Return the smallest item, or throw Underflow if empty.
  */
 template<typename Comparable>
-const Comparable& BinaryHeap<Comparable>::findMin() const {
-	if (isEmpty()) throw underflow_error{};
-	return array[1];
-}
-
-template<typename Comparable>
 const Comparable& BinaryHeap<Comparable>::findMax() const {
-	if (isEmpty()) throw underflow_error{};
+	if (isEmpty()) throw underflow_error{"heap is empty."};
 	return array[1];
 }
-
 
 /**
- * Remove the minimum item.
+ * Remove the maximum item.
  * Throws UnderflowException if empty.
  */
-template<typename Comparable>
-void BinaryHeap<Comparable>::deleteMin() {
-	if (isEmpty()) throw underflow_error("heap is empty.");
-	array[1] = std::move(array[currentSize--]);
-	minHeapify(1);
-}
-
-/**
- * Remove the minimum item and place it in minItem.
- * Throws Underflow if empty.
- */
-template<typename Comparable>
-void BinaryHeap<Comparable>::deleteMin(Comparable & minItem) {
-	if (isEmpty()) throw underflow_error("heap is empty.");
-	minItem = std::move(array[1]);
-	array[1] = std::move(array[currentSize--]);
-	minHeapify(1);
-}
-
 template<typename Comparable>
 void BinaryHeap<Comparable>::deleteMax() {
 	if (isEmpty()) throw underflow_error("heap is empty.");
@@ -63,6 +38,10 @@ void BinaryHeap<Comparable>::deleteMax() {
 	maxHeapify(1);
 }
 
+/**
+ * Remove the maximum item and place it in maxItem.
+ * Throws Underflow if empty.
+ */
 template<typename Comparable>
 void BinaryHeap<Comparable>::deleteMax(Comparable & maxItem) {
 	if (isEmpty()) throw underflow_error("heap is empty.");
@@ -87,23 +66,6 @@ void BinaryHeap<Comparable>::buildHeap() {
  * node is the index at which the percolate begins.
  */
 template<typename Comparable>
-void BinaryHeap<Comparable>::minHeapify(int node) {
-	int child;
-	Comparable tmp = std::move(array[node]);
-
-	for (; node * 2 <= currentSize; node = child) {
-		child = node * 2;
-		if (child != currentSize && array[child + 1] < array[child])
-			++child;
-		if (array[child] < tmp)
-			array[node] = std::move(array[child]);
-		else
-			break;
-	}
-	array[node] = std::move(tmp);
-}
-
-template<typename Comparable>
 void BinaryHeap<Comparable>::maxHeapify(int node) {
 	int child;
 	Comparable tmp = std::move(array[node]);
@@ -121,6 +83,7 @@ void BinaryHeap<Comparable>::maxHeapify(int node) {
 	array[node] = std::move(tmp);
 }
 
+//Prints the heap
 template<typename Comparable>
 void BinaryHeap<Comparable>::print() {
 
@@ -130,6 +93,5 @@ void BinaryHeap<Comparable>::print() {
 		cout << array[i] << " ";
 	}
 	cout << endl;
-	
 }
 
