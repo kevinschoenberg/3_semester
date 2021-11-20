@@ -36,8 +36,6 @@ private:
 	  Comparable element;
 	  BinaryNode *left;
 	  BinaryNode *right;
-
-	  //Added parent node
 	  BinaryNode *parent;
 
 	  BinaryNode(const Comparable& theElement, BinaryNode* lt, BinaryNode* rt, BinaryNode* pt) :
@@ -52,14 +50,27 @@ private:
      * t is the node that roots the subtree.
      * Set the new root of the subtree.
      */
-	void insert(const Comparable& x, BinaryNode* &t, BinaryNode* &t_parent) {
+	void insert(const Comparable& x, BinaryNode* &t) {
 		if (t == nullptr)
-			t = new BinaryNode{x, nullptr, nullptr, t_parent};
+			t = new BinaryNode{x, nullptr, nullptr, nullptr};
 		else {
 			if (x < t->element)
-				insert(x, t->left, t);
+				if(t->left != nullptr)
+				{
+					insert(x, t->left);
+				} else
+				{
+					std::cout << "test" << std::endl;
+					t->left = new BinaryNode{x, nullptr, nullptr, t};
+				}
 			else if (t->element < x)
-				insert(x, t->right, t);
+				if(t->right != nullptr)
+				{
+					insert(x, t->right);
+				} else
+				{
+					t->right = new BinaryNode{x, nullptr, nullptr, t};
+				}
 			else; // Duplicate; do nothing
 		}
 	}
@@ -157,7 +168,7 @@ private:
 		if (t == nullptr)
 			return nullptr;
 		else
-			return new BinaryNode{t->element, clone(t->left), clone(t->right)};
+			return new BinaryNode{t->element, clone(t->left), clone(t->right), clone(t->parent)};
 	}
 };
 

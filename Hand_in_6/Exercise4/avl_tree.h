@@ -6,12 +6,14 @@
 #include <iostream>
 using namespace std;
 
-template<typename Comparable>
-class AvlTree {
-  public:
-  AvlTree():root {nullptr} {}
+template <typename Comparable>
+class AvlTree
+{
+public:
+	AvlTree() : root{nullptr} {}
 
-	AvlTree(const AvlTree & rhs):root {nullptr} {
+	AvlTree(const AvlTree &rhs) : root{nullptr}
+	{
 		root = clone(rhs.root);
 	}
 
@@ -20,33 +22,66 @@ class AvlTree {
 	/**
      * Deep copy.
      */
-	AvlTree& operator=(const AvlTree& rhs) {
+	AvlTree &operator=(const AvlTree &rhs)
+	{
 		AvlTree copy(rhs);
 		std::swap(*this, copy);
 		return *this;
 	}
 
-	const Comparable& findMin() const; // find min element
-    const Comparable& findMax() const; // find max element
-    bool isEmpty() const; // test for emptiness
-    void printTree(ostream& out = cout) const;
-    void makeEmpty(); // empty tree
-    void insert(const Comparable& x); // insert item
-	bool contains(const Comparable& x) const; // look for item
-    void remove(const Comparable& x); // remove item
+	const Comparable &findMin() const; // find min element
+	const Comparable &findMax() const; // find max element
+	bool isEmpty() const;			   // test for emptiness
+	void printTree(ostream &out = cout) const;
+	void makeEmpty();						  // empty tree
+	void insert(const Comparable &x);		  // insert item
+	bool contains(const Comparable &x) const; // look for item
+	void remove(const Comparable &x);		  // remove item
+	bool verify();
 
-  private:
-	struct AvlNode {
+private:
+	struct AvlNode
+	{
 		Comparable element;
 		AvlNode *left;
 		AvlNode *right;
 		int height;
 
-		AvlNode(const Comparable & ele, AvlNode * lt, AvlNode * rt, int h = 0)
-	  		: element {ele}, left {lt}, right {rt}, height {h} {}
+		AvlNode(const Comparable &ele, AvlNode *lt, AvlNode *rt, int h = 0)
+			: element{ele}, left{lt}, right{rt}, height{h} {}
 	};
 
 	AvlNode *root;
+
+	bool verify(AvlNode *&t)
+	{
+		// We reached the buttom of a branch and returns.
+		// No further action is taken since the tree has already been verified including this branch
+		if (t == nullptr) // O(1)
+		{
+			return true;
+		}
+		
+		// If the height on t is not one higher than one of the branches, then there is a mistake
+		if (max(height(t->left), height(t->right)) + 1 != t->height) // O(2)
+		{
+			return false;
+		}
+
+		// We check if the difference in height of the two subtrees are within 1
+		if (height(t->left) - height(t->right) > ALLOWED_IMBALANCE) // O(2)
+			return false;
+		else if (height(t->right) - height(t->left) > ALLOWED_IMBALANCE) // O(2)
+			return false;
+
+		// Verify the left and right child
+		if (verify(t->left) && verify(t->right)) // O(N/2) + O(N/2)
+		{
+			return true;
+		}
+		// If the two verifies above fail, the tree is not correct
+		return false;
+	}
 
 	/**
      * Internal method to insert into a subtree.
@@ -54,10 +89,12 @@ class AvlTree {
      * t is the node that roots the subtree.
      * Set the new root of the subtree.
      */
-	void insert(const Comparable & x, AvlNode * &t) {
+	void insert(const Comparable &x, AvlNode *&t)
+	{
 		if (t == nullptr)
-			t = new AvlNode {x, nullptr, nullptr};
-		else {
+			t = new AvlNode{x, nullptr, nullptr};
+		else
+		{
 			if (x < t->element)
 				insert(x, t->left);
 			else if (t->element < x)
@@ -72,18 +109,22 @@ class AvlTree {
      * t is the node that roots the subtree.
      * Set the new root of the subtree.
      */
-	void remove(const Comparable& x, AvlNode * &t) {
+	void remove(const Comparable &x, AvlNode *&t)
+	{
 		if (t == nullptr)
-			return;				// Item not found; do nothing
+			return; // Item not found; do nothing
 
 		if (x < t->element)
 			remove(x, t->left);
 		else if (t->element < x)
 			remove(x, t->right);
-		else if (t->left != nullptr && t->right != nullptr)	{ // Two children
+		else if (t->left != nullptr && t->right != nullptr)
+		{ // Two children
 			t->element = findMin(t->right)->element;
 			remove(t->element, t->right);
-		} else {
+		}
+		else
+		{
 			AvlNode *oldNode = t;
 			t = (t->left != nullptr) ? t->left : t->right;
 			delete oldNode;
@@ -95,7 +136,8 @@ class AvlTree {
 	static const int ALLOWED_IMBALANCE = 1;
 
 	// Assume t is balanced or within one of being balanced
-	void balance(AvlNode * &t) {
+	void balance(AvlNode *&t)
+	{
 		if (t == nullptr)
 			return;
 
@@ -117,7 +159,8 @@ class AvlTree {
      * Internal method to find the smallest item in a subtree t.
      * Return node containing the smallest item.
      */
-	AvlNode *findMin(AvlNode * t) const {
+	AvlNode *findMin(AvlNode *t) const
+	{
 		if (t == nullptr)
 			return nullptr;
 		if (t->left == nullptr)
@@ -129,7 +172,8 @@ class AvlTree {
      * Internal method to find the largest item in a subtree t.
      * Return node containing the largest item.
      */
-	AvlNode *findMax(AvlNode * t) const {
+	AvlNode *findMax(AvlNode *t) const
+	{
 		if (t != nullptr)
 			while (t->right != nullptr)
 				t = t->right;
@@ -141,7 +185,8 @@ class AvlTree {
      * x is item to search for.
      * t is the node that roots the tree.
      */
-	bool contains(const Comparable & x, AvlNode * t) const {
+	bool contains(const Comparable &x, AvlNode *t) const
+	{
 		if (t == nullptr)
 			return false;
 		else if (x < t->element)
@@ -149,14 +194,16 @@ class AvlTree {
 		else if (t->element < x)
 			return contains(x, t->right);
 		else
-			return true;	// Match
+			return true; // Match
 	}
 
 	/**
      * Internal method to make subtree empty.
      */
-	void makeEmpty(AvlNode * &t) {
-		if (t != nullptr) {
+	void makeEmpty(AvlNode *&t)
+	{
+		if (t != nullptr)
+		{
 			makeEmpty(t->left);
 			makeEmpty(t->right);
 			delete t;
@@ -167,8 +214,10 @@ class AvlTree {
 	/**
      * Internal method to print a subtree rooted at t in sorted order.
      */
-	void printTree(AvlNode * t) const {
-		if (t != nullptr) {
+	void printTree(AvlNode *t) const
+	{
+		if (t != nullptr)
+		{
 			printTree(t->left);
 			cout << t->element << endl;
 			printTree(t->right);
@@ -178,23 +227,26 @@ class AvlTree {
 	/**
      * Internal method to clone subtree.
      */
-	AvlNode *clone(AvlNode * t) const {
+	AvlNode *clone(AvlNode *t) const
+	{
 		if (t == nullptr)
 			return nullptr;
 		else
-			return new AvlNode {
-			t->element, clone(t->left), clone(t->right), t->height};
+			return new AvlNode{
+				t->element, clone(t->left), clone(t->right), t->height};
 	}
 
 	// Avl manipulations
 	/**
      * Return the height of node t or -1 if nullptr.
      */
-	int height(AvlNode * t) const {
+	int height(AvlNode *t) const
+	{
 		return t == nullptr ? -1 : t->height;
 	}
 
-	int max(int lhs, int rhs) const {
+	int max(int lhs, int rhs) const
+	{
 		return lhs > rhs ? lhs : rhs;
 	}
 
@@ -202,7 +254,9 @@ class AvlTree {
      * Rotate binary tree node with left child.
      * For AVL trees, this is a single rotation for case 1.
      * Update heights, then set new root.
-     */ void rotateWithLeftChild(AvlNode * &k2) {
+     */
+	void rotateWithLeftChild(AvlNode *&k2)
+	{
 		AvlNode *k1 = k2->left;
 		k2->left = k1->right;
 		k1->right = k2;
@@ -216,7 +270,8 @@ class AvlTree {
      * For AVL trees, this is a single rotation for case 4.
      * Update heights, then set new root.
      */
-	void rotateWithRightChild(AvlNode * &k1) {
+	void rotateWithRightChild(AvlNode *&k1)
+	{
 		AvlNode *k2 = k1->right;
 		k1->right = k2->left;
 		k2->left = k1;
@@ -231,7 +286,8 @@ class AvlTree {
      * For AVL trees, this is a double rotation for case 2.
      * Update heights, then set new root.
      */
-	void doubleWithLeftChild(AvlNode * &k3) {
+	void doubleWithLeftChild(AvlNode *&k3)
+	{
 		rotateWithRightChild(k3->left);
 		rotateWithLeftChild(k3);
 	}
@@ -242,7 +298,8 @@ class AvlTree {
      * For AVL trees, this is a double rotation for case 3.
      * Update heights, then set new root.
      */
-	void doubleWithRightChild(AvlNode * &k1) {
+	void doubleWithRightChild(AvlNode *&k1)
+	{
 		rotateWithLeftChild(k1->right);
 		rotateWithRightChild(k1);
 	}

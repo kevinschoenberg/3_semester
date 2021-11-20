@@ -69,3 +69,8 @@ template<typename Comparable>
 void AvlTree<Comparable>::remove(const Comparable & x) {
 	remove(x, root);
 }
+
+template<typename Comparable>
+bool AvlTree<Comparable>::verify() {
+	return verify(root);
+}
