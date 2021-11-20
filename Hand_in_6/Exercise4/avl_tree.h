@@ -55,7 +55,7 @@ private:
 
 	bool verify(AvlNode *&t)
 	{
-		// We reached the buttom of a branch and returns.
+		// We reached the bottom of a branch and returns.
 		// No further action is taken since the tree has already been verified including this branch
 		if (t == nullptr) // O(1)
 		{
