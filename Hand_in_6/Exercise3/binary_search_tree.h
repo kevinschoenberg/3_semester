@@ -5,7 +5,7 @@
 #include <algorithm>
 using namespace std;
 
-template<typename Comparable>
+template<typename Object>
 class BinarySearchTree {
   public:
 	BinarySearchTree() : root {nullptr} {}
@@ -22,23 +22,59 @@ class BinarySearchTree {
 		return *this;
 	}
 
-    const Comparable& findMin() const; // find min element
-    const Comparable& findMax() const; // find max element
+    const Object& findMin() const; // find min element
+    const Object& findMax() const; // find max element
     bool isEmpty() const; // test for emptiness
     void printTree(ostream& out = cout) const;
     void makeEmpty(); // empty tree
-    void insert(const Comparable& x); // insert item
-	bool contains(const Comparable& x) const; // look for item
-    void remove(const Comparable& x); // remove item
+    void insert(const Object& x); // insert item
+	bool contains(const Object& x) const; // look for item
+    void remove(const Object& x); // remove item
+
+	#include "set_itr.h"
+
+    iterator Sinsert(const Object &x)
+    {
+        insert(x);
+        return Sfind(x);
+    }
+    iterator Sfind(const Object &x) const
+    {
+		iterator out;
+        BinaryNode *node = root;
+        while (node != nullptr)
+        {
+            if (node->element == x)
+            {
+                return out{node};
+            }
+            else if (x < node->element)
+            {
+                node = node->left;
+            }
+            else if (x > node->element)
+            {
+                node = node->right;
+            }
+        }
+        return iterator(nullptr);
+    }
+
+    iterator Serase(iterator &itr)
+    {
+        iterator out {itr->parent};
+        remove(itr->element);
+        return out;
+    }
 
 private:
   struct BinaryNode {
-	  Comparable element;
+	  Object element;
 	  BinaryNode *left;
 	  BinaryNode *right;
 	  BinaryNode *parent;
 
-	  BinaryNode(const Comparable& theElement, BinaryNode* lt, BinaryNode* rt, BinaryNode* pt) :
+	  BinaryNode(const Object& theElement, BinaryNode* lt, BinaryNode* rt, BinaryNode* pt) :
 	  	  element {theElement}, left {lt}, right {rt}, parent {pt} { }
   	};
 
@@ -50,7 +86,7 @@ private:
      * t is the node that roots the subtree.
      * Set the new root of the subtree.
      */
-	void insert(const Comparable& x, BinaryNode* &t) {
+	void insert(const Object& x, BinaryNode* &t) {
 		if (t == nullptr)
 			t = new BinaryNode{x, nullptr, nullptr, nullptr};
 		else {
@@ -81,7 +117,7 @@ private:
      * t is the node that roots the subtree.
      * Set the new root of the subtree.
      */
-	void remove(const Comparable& x, BinaryNode* &t) {
+	void remove(const Object& x, BinaryNode* &t) {
 		if (t == nullptr)
 			return;				// Item not found; do nothing
 		if (x < t->element)
@@ -127,7 +163,7 @@ private:
      * x is item to search for.
      * t is the node that roots the subtree.
      */
-	bool contains(const Comparable& x, BinaryNode* t) const {
+	bool contains(const Object& x, BinaryNode* t) const {
 		if (t == nullptr)
 			return false;
 		else if (x < t->element)

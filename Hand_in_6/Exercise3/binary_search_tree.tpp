@@ -2,8 +2,8 @@
  * Find the smallest item in the tree.
  * Throw UnderflowException if empty.
  */
-template<typename Comparable>
-const Comparable& BinarySearchTree<Comparable>::findMin() const {
+template<typename Object>
+const Object& BinarySearchTree<Object>::findMin() const {
 	if (isEmpty()) throw underflow_error("tree is empty.");
 	return findMin(root)->element;
 }
@@ -11,8 +11,8 @@ const Comparable& BinarySearchTree<Comparable>::findMin() const {
  * Find the largest item in the tree.
  * Throw UnderflowException if empty.
  */
-template<typename Comparable>
-const Comparable& BinarySearchTree<Comparable>::findMax() const {
+template<typename Object>
+const Object& BinarySearchTree<Object>::findMax() const {
 	if (isEmpty()) throw underflow_error("tree is empty.");
 	 return findMax(root)->element;
 }
@@ -20,8 +20,8 @@ const Comparable& BinarySearchTree<Comparable>::findMax() const {
 /**
  * Returns true if x is found in the tree.
  */
-template <typename Comparable>
-bool BinarySearchTree<Comparable>::contains(const Comparable& x) const {
+template <typename Object>
+bool BinarySearchTree<Object>::contains(const Object& x) const {
 	return contains(x, root);
 }
 
@@ -29,16 +29,16 @@ bool BinarySearchTree<Comparable>::contains(const Comparable& x) const {
  * Test if the tree is logically empty.
  * Return true if empty, false otherwise.
  */
-template<typename Comparable>
-bool BinarySearchTree<Comparable>::isEmpty() const {
+template<typename Object>
+bool BinarySearchTree<Object>::isEmpty() const {
 	return root == nullptr;
 }
 
 /**
  * Print the tree contents in sorted order.
  */
-template<typename Comparable>
-void BinarySearchTree<Comparable>::printTree(ostream& out) const {
+template<typename Object>
+void BinarySearchTree<Object>::printTree(ostream& out) const {
 	if (isEmpty()) {
 		out << "Empty tree" << endl;
 	} else
@@ -48,23 +48,23 @@ void BinarySearchTree<Comparable>::printTree(ostream& out) const {
 /**
  * Make the tree logically empty.
  */
-template<typename Comparable>
-void BinarySearchTree<Comparable>::makeEmpty() {
+template<typename Object>
+void BinarySearchTree<Object>::makeEmpty() {
 	makeEmpty(root);
 }
 
 /**
  * Insert x into the tree; duplicates are ignored.
  */
-template<typename Comparable>
-void BinarySearchTree<Comparable>::insert(const Comparable& x) {
+template<typename Object>
+void BinarySearchTree<Object>::insert(const Object& x) {
 	insert(x, root);
 }
 
 /**
  * Remove x from the tree. Nothing is done if x is not found.
  */
-template<typename Comparable>
-void BinarySearchTree<Comparable>::remove(const Comparable& x) {
+template<typename Object>
+void BinarySearchTree<Object>::remove(const Object& x) {
 	remove(x, root);
 }

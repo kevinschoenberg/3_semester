@@ -1,20 +1,21 @@
 #include <iostream>
 #include "binary_search_tree.h"
+//#include "set.h"
 using namespace std;
 
 	// Test program
 int main() {
-	BinarySearchTree<int> t;
+	//BinarySearchTree<int> t;
 
-	t.insert(10);
-	t.insert(11);
-	t.insert(7);
-	t.insert(8);
-	t.insert(4);
-	t.insert(12);
-	t.insert(15);
+	BinarySearchTree<int> S;
+	BinarySearchTree<int>::iterator itr;
 
-	t.printTree();
+	itr = S.Sinsert(4);
+
+
+
+
+	
 
 	return 0;
 }
