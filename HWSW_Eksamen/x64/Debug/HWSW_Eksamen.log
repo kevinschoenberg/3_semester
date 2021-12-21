@@ -1,0 +1,385 @@
+﻿  HWSW_Eksamen.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(19,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(92,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(307,1): error C2665: 'sc_core::sc_trace': none of the 60 overloads could convert all the argument types
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(324,20): message : could be 'void sc_core::sc_trace(sc_core::sc_trace_file *,const void *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(307,1): message : while trying to match the argument list '(sc_core::sc_trace_file *, const T, std::string)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(302): message : while compiling class template member function 'void sc_core::sc_in<std::vector<int,std::allocator<int>>>::end_of_elaboration(void)'
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(34): message : see reference to class template instantiation 'sc_core::sc_in<std::vector<int,std::allocator<int>>>' being compiled
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1144,1): error C2665: 'sc_core::sc_trace': none of the 60 overloads could convert all the argument types
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(324,20): message : could be 'void sc_core::sc_trace(sc_core::sc_trace_file *,const void *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1144,1): message : while trying to match the argument list '(sc_core::sc_trace_file *, const T, std::string)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1134): message : while compiling class template member function 'void sc_core::sc_inout<T>::end_of_elaboration(void)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1655): message : see reference to class template instantiation 'sc_core::sc_inout<T>' being compiled
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(77): message : see reference to class template instantiation 'sc_core::sc_out<std::vector<int,std::allocator<int>>>' being compiled
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(308,1): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'const T' (or there is no acceptable conversion)
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(464,39): message : could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(439,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(421,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(403,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(385,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(367,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(349,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(331,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(313,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(294,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(268,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(249,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(215,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(197,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(192,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(187,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(182,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(140,1): message : or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\kernel\sc_status.h(69,22): message : or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\kernel\sc_time.h(434,1): message : or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(308,1): message : while trying to match the argument list '(std::ostream, const T)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(307): message : while compiling class template member function 'void sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>::print(std::ostream &) const'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(348): message : see reference to class template instantiation 'sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>' being compiled
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\HWSW_Eksamen.cpp(14): message : see reference to class template instantiation 'sc_core::sc_signal<std::vector<int,std::allocator<int>>,sc_core::SC_ONE_WRITER>' being compiled
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(316,1): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'const T' (or there is no acceptable conversion)
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(464,39): message : could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(439,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(421,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(403,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(385,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(367,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(349,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(331,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(313,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(294,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(268,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(249,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(215,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(197,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(192,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(187,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(182,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(140,1): message : or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\kernel\sc_status.h(69,22): message : or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\kernel\sc_time.h(434,1): message : or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(316,1): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, const T)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(314): message : while compiling class template member function 'void sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>::dump(std::ostream &) const'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(317,1): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'const T' (or there is no acceptable conversion)
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(464,39): message : could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(439,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(421,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(403,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(385,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(367,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(349,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(331,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(313,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(294,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(268,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(249,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(215,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(197,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(192,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(187,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\ostream(182,39): message : or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(140,1): message : or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\kernel\sc_status.h(69,22): message : or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\kernel\sc_time.h(434,1): message : or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal.h(317,1): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, const T)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+  Source.h
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(19,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(92,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(307,1): error C2665: 'sc_core::sc_trace': none of the 60 overloads could convert all the argument types
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(324,20): message : could be 'void sc_core::sc_trace(sc_core::sc_trace_file *,const void *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(307,1): message : while trying to match the argument list '(sc_core::sc_trace_file *, const T, std::string)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(302): message : while compiling class template member function 'void sc_core::sc_in<std::vector<int,std::allocator<int>>>::end_of_elaboration(void)'
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(34): message : see reference to class template instantiation 'sc_core::sc_in<std::vector<int,std::allocator<int>>>' being compiled
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1144,1): error C2665: 'sc_core::sc_trace': none of the 60 overloads could convert all the argument types
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(324,20): message : could be 'void sc_core::sc_trace(sc_core::sc_trace_file *,const void *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(249,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(248,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxnum &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(247,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval_fast &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(246,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_fxval &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(244,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_lv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(243,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bv_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(241,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_unsigned &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(240,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_signed &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(239,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_uint_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(238,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_int_base &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(236,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_logic &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(235,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::sc_bit &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(232,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::uint64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(231,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_dt::int64 &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(230,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(229,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(228,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(227,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(226,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned long &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(225,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned int &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(224,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned short &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char *,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(223,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const unsigned char &,const std::string &,int)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(221,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const double &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(220,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const float &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(219,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const bool &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(217,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_time &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event *,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\tracing\sc_trace.h(216,1): message : or       'void sc_core::sc_trace(sc_core::sc_trace_file *,const sc_core::sc_event &,const std::string &)'
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1144,1): message : while trying to match the argument list '(sc_core::sc_trace_file *, const T, std::string)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1134): message : while compiling class template member function 'void sc_core::sc_inout<T>::end_of_elaboration(void)'
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src\sysc\communication\sc_signal_ports.h(1655): message : see reference to class template instantiation 'sc_core::sc_inout<T>' being compiled
+          with
+          [
+              T=std::vector<int,std::allocator<int>>
+          ]
+C:\Users\Kevin\OneDrive\Uni\Semester_3\Hw_sf\HWSW_Eksamen\Source.h(77): message : see reference to class template instantiation 'sc_core::sc_out<std::vector<int,std::allocator<int>>>' being compiled
+  Generating Code...
