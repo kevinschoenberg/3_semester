@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\msvc10\SystemC\x64\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\systemc-2.3.3\src;C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\src;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\systemc-2.3.3\msvc10\SystemC\Debug;C:\Users\Kevin\OneDrive\Dokumenter\systemc-2.3.3\msvc10\SystemC\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
